@@ -16,10 +16,10 @@ def nyc_pigeon_organizer(data)
       value.each { |item| new_data[item.to_sym] = [category, description].to_h }
       # Get rid of any duplicate names in the array
       names_array.uniq!
-      
+
     end
   end
-  
-  
+
+
   binding.pry
 end
