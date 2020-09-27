@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
     value.collect do |key, value|
       # Now we are at the inner arrays of names for each category and description
       # Push all the names to an array so we can sort them
-      value.each { |item| names_array.push(item.to_sym) }
+      value.each { |item| names_array.push(item) }
       # Get rid of any duplicate names in the array
       names_array.uniq!
 
@@ -30,10 +30,10 @@ def nyc_pigeon_organizer(data)
 
      # Use each name to assign each the category/description pair
      value.each do |item|
-       if new_data[item.to_sym][category]
-          new_data[item.to_sym][category].push("#{description}")
+       if new_data[item][category]
+          new_data[item][category].push("#{description}")
        else
-         new_data[item.to_sym].store(category, ["#{description}"])
+         new_data[item].store(category, ["#{description}"])
        end
      end
 
