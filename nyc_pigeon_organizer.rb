@@ -30,6 +30,9 @@ def nyc_pigeon_organizer(data)
 
      # Use each name to assign each the category/description pair
      value.each do |item|
+       if new_data[item.to_sym][category]
+         binding.pry
+       end
        new_data[item.to_sym].store(category, ["#{description}"])
      end
 
