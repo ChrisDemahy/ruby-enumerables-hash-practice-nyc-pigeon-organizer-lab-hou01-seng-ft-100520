@@ -30,8 +30,8 @@ def nyc_pigeon_organizer(data)
 
      # Use each name to assign each the category/description pair
      value.each do |item|
-       new_data[item][category] = description
-     end  
+       new_data[item].store(category, description)
+     end
 
    end
  end
