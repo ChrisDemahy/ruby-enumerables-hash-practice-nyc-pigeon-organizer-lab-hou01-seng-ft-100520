@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
 
     end
   end
-  new_data = names_array.collect { |item| [item, ""].to_h}
+ names_array.each { |item| new_data[item]= "" }
   
 
   binding.pry
