@@ -5,11 +5,11 @@ def nyc_pigeon_organizer(data)
   new_data = Hash.new
   names_array = Array.new
   # Collect the names of the pidgeions into an array
-  data.collect do |key,value|
-
+  data.collect do |key,value| 
     value.collect do |key, value|
+      # Now we are at the inner arrays of names for each category and description
+      # Push all the names to an array so we can sort them
       value.each { |item| names_array.push(item) }
-
     end
   end
   names_array.uniq!
