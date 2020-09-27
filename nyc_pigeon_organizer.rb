@@ -32,9 +32,9 @@ def nyc_pigeon_organizer(data)
      value.each do |item|
        new_data[item][category] = description
      end  
-     
+
    end
  end
- 
+
   binding.pry
 end
