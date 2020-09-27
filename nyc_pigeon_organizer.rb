@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
       value.each { |item| names_array.push(item) }
     end
   end
-  
+
   # Get rid of any duplicate names in the array
   names_array.uniq!
   
