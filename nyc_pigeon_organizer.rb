@@ -12,5 +12,6 @@ def nyc_pigeon_organizer(data)
       
     end
   end
+  names_array.uniq!
   binding.pry
 end
