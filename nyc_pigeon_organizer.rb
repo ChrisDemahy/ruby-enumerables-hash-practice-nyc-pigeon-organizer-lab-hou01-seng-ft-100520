@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
 
     value.collect do |key, value|
       value.each { |item| names_array.push(item) }
-      
+
     end
   end
   names_array.uniq!
