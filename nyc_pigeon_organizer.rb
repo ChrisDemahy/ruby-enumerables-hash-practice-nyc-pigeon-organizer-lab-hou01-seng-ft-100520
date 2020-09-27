@@ -1,3 +1,4 @@
+require "pry"
 def nyc_pigeon_organizer(data)
   # Convert hash data provided into a different structured hash
   # Organizes pidgeons to be by name instead of by attribute
