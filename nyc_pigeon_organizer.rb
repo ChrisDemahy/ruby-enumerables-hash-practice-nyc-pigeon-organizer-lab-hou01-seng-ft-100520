@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   new_data = names_array.collect { |item| [item, ""].to_h}
   data.collect do |key,value|
     value.collect do |key, value|
-    
+
     end
   end
 
