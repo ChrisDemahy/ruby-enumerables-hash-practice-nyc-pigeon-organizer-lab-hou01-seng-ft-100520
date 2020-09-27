@@ -8,10 +8,9 @@ def nyc_pigeon_organizer(data)
   data.collect do |key,value|
 
     value.collect do |key, value|
-      value.each |item| do
-        names_array.push(item)
-      end
-  end
+      value.each { |item| names_array.push(item) }
+      
+    end
   end
   binding.pry
 end
