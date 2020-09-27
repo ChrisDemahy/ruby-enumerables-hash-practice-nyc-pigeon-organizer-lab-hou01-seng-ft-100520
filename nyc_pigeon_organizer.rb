@@ -30,9 +30,11 @@ def nyc_pigeon_organizer(data)
 
      # Use each name to assign each the category/description pair
      value.each do |item|
+       # if the category already exists under the name then push the description to the array
        if new_data[item][category]
           new_data[item][category].push("#{description}")
        else
+         # otherwise the category and description are added to the name hash
          new_data[item].store(category, ["#{description}"])
        end
      end
@@ -40,6 +42,6 @@ def nyc_pigeon_organizer(data)
    end
  end
 
-  binding.pry
+  # binding.pry
   new_data
 end
