@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
 
     end
   end
- names_array.each { |item| new_data[item]= "" }
+ names_array.each { |item| new_data[item]= Hash.new }
 
 
   binding.pry
