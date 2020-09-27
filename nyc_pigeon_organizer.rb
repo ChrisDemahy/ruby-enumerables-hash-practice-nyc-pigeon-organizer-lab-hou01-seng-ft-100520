@@ -11,7 +11,6 @@ def nyc_pigeon_organizer(data)
       value.each |item| do
         names_array.push(item)
       end
-    end
   end
   end
   binding.pry
